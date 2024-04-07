@@ -2,6 +2,14 @@
 
 This is a SvelteKit app. It's a template/boilerplate for all the other SvelteKit apps that you are going to create.
 
+## Pre Installed Packages
+
+sveltekit
+TailwindCss
+shadcn-svelte (including all Components)
+svelte-radix
+
+
 ## Getting Started
 
 To get started, clone this repository and install the dependencies:
@@ -50,3 +58,4 @@ If you find any issues or have any suggestions for improvement, feel free to ope
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
