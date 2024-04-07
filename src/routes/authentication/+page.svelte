@@ -1,7 +1,7 @@
 <script lang="ts">
    // import { UserStore } from "$lib/stores/data";
-    import '../../../app.css';
-    import logo from '$lib/images/SIGNUP_LOGO.png';
+    import '../../app.pcss';
+    //import logo from '$lib/images/SIGNUP_LOGO.png';
     import { get } from "svelte/store";
    // import ReusableButton from "../../../components/Reusable/Button.svelte";
    // import API from "$lib/services/api";
@@ -16,32 +16,32 @@
       password: "",
     };
   
-    let Logo =logo;
+    //let Logo =logo;
   
     async function loginFn(params: any) {
-    try {
-      const res = await API.post("/account/session/user/login/", {
-        ...login,
-      });
+    // try {
+    //   const res = await API.post("/account/session/user/login/", {
+    //     ...login,
+    //   });
   
-      // Check if res and res.data are defined
-      if (!res || !res.data) {
-        console.error("Invalid response from the server");
-        return; // Exit the function if the response is not valid
-      }
+    //   // Check if res and res.data are defined
+    //   if (!res || !res.data) {
+    //     console.error("Invalid response from the server");
+    //     return; // Exit the function if the response is not valid
+    //   }
   
-      const user = res.data.user;
+    //   const user = res.data.user;
   
-      // Additional check for user object
-      if (user && user.username) {
-        UserStore.set(user);
-        await goto('/dashboard'); // Navigate to the dashboard
-      } else {
-        console.error("User data is missing in the response");
-      }
-    } catch (error) {
-      console.log("login:", error);
-    }
+    //   // Additional check for user object
+    //   if (user && user.username) {
+    //     UserStore.set(user);
+    //     await goto('/dashboard'); // Navigate to the dashboard
+    //   } else {
+    //     console.error("User data is missing in the response");
+    //   }
+    // } catch (error) {
+    //   console.log("login:", error);
+    // }
   }
   </script>
   <Button on:click={toggleMode} variant="outline" size="icon">
@@ -55,7 +55,7 @@
   </Button>
   <div class="flex min-h-full flex-col bg-background text-foreground justify-center px-6 py-12 lg:px-8">
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-      <img class="mx-auto h-22 w-auto dark:invert" src={Logo} alt="Signup Casuals">
+      <img class="mx-auto h-22 w-auto dark:invert"  alt="Signup Casuals">
       <!-- <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign in to your account</h2> -->
     </div>
   

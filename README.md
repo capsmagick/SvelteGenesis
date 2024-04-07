@@ -15,7 +15,7 @@ svelte-radix
 To get started, clone this repository and install the dependencies:
 
 bash
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/capsmagick/skitwindshad.git
 cd your-repo
 npm install
 
